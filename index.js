@@ -6,6 +6,14 @@ app.use((req, res, next) => {
   next()
 })
 
+app.get('/', (req, res) => {
+  res.json({
+    service: 'nexus-api',
+    version: '1.0.0',
+    endpoints: ['/health', '/stats'],
+  })
+})
+
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
