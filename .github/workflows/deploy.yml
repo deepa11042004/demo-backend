@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  DOCKER_IMAGE:   ${{ secrets.DOCKERHUB_USERNAME }}/nexus-api
+  DOCKER_IMAGE:   ${{ secrets.DOCKERHUB_USERNAME }}/demo-backend
   AWS_REGION:     ${{ secrets.AWS_REGION }}
   FRONTEND_STACK: react-demo-stack
 
