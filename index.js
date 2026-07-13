@@ -24,7 +24,7 @@ app.get('/health', (req, res) => {
 
 app.get('/stats', (req, res) => {
   res.json({
-    teams: 12483,
+    teams: 15483,
     uptime: 99.97,
     rating: 4.9,
     setupMinutes: 10,
