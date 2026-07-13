@@ -6,7 +6,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.get('/api/health', (req, res) => {
+app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
@@ -14,7 +14,7 @@ app.get('/api/health', (req, res) => {
   })
 })
 
-app.get('/api/stats', (req, res) => {
+app.get('/stats', (req, res) => {
   res.json({
     teams: 12483,
     uptime: 99.97,
