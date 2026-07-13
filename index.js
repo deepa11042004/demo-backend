@@ -27,7 +27,7 @@ app.get('/stats', (req, res) => {
     teams: 12483,
     uptime: 99.97,
     rating: 4.9,
-    setupMinutes: 3,
+    setupMinutes: 10,
   })
 })
 
